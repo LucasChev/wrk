@@ -15,7 +15,7 @@ int main()
 { 
     // prints hello world 
     test t = test();
-    t.setState(test::FILLED_NEW);
+    t.setState(t.transition(test::OS_FILLED,test::OS_NEW));
  
     printf("Hello World, state is %d\n",t.getState());
  
